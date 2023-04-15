@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ColorEnumerations", "src\ColorEnumerations\ColorEnumerations.fsproj", "{6BADF725-D3B8-4259-8BB4-634BD9263724}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ColorEnumerations.Sample.FSharp", "src\ColorEnumerations.Sample.FSharp\ColorEnumerations.Sample.FSharp.fsproj", "{44E7BD34-5CAE-438C-929C-46B9B3637303}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorEnumerations.Sample.CSharp", "src\ColorEnumerations.Sample.CSharp\ColorEnumerations.Sample.CSharp.csproj", "{C3835946-C383-46D8-A73A-01D5B8AA8E44}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ColorEnumerations.Test", "test\ColorEnumerations.Test\ColorEnumerations.Test.fsproj", "{BD597733-3E3C-4E2F-88FB-C8FFE9A25355}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{3C215B85-1D2C-4441-B9A4-433AFD0D9D78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorEnumerations.Sample.Blazor", "src\ColorEnumerations.Sample.Blazor\ColorEnumerations.Sample.Blazor.csproj", "{A6352514-29F9-4FAC-A616-85755B5783C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BADF725-D3B8-4259-8BB4-634BD9263724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BADF725-D3B8-4259-8BB4-634BD9263724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BADF725-D3B8-4259-8BB4-634BD9263724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BADF725-D3B8-4259-8BB4-634BD9263724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44E7BD34-5CAE-438C-929C-46B9B3637303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44E7BD34-5CAE-438C-929C-46B9B3637303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44E7BD34-5CAE-438C-929C-46B9B3637303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44E7BD34-5CAE-438C-929C-46B9B3637303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3835946-C383-46D8-A73A-01D5B8AA8E44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3835946-C383-46D8-A73A-01D5B8AA8E44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3835946-C383-46D8-A73A-01D5B8AA8E44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3835946-C383-46D8-A73A-01D5B8AA8E44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD597733-3E3C-4E2F-88FB-C8FFE9A25355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD597733-3E3C-4E2F-88FB-C8FFE9A25355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD597733-3E3C-4E2F-88FB-C8FFE9A25355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD597733-3E3C-4E2F-88FB-C8FFE9A25355}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6352514-29F9-4FAC-A616-85755B5783C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6352514-29F9-4FAC-A616-85755B5783C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6352514-29F9-4FAC-A616-85755B5783C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6352514-29F9-4FAC-A616-85755B5783C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C3835946-C383-46D8-A73A-01D5B8AA8E44} = {3C215B85-1D2C-4441-B9A4-433AFD0D9D78}
+		{44E7BD34-5CAE-438C-929C-46B9B3637303} = {3C215B85-1D2C-4441-B9A4-433AFD0D9D78}
+		{A6352514-29F9-4FAC-A616-85755B5783C4} = {3C215B85-1D2C-4441-B9A4-433AFD0D9D78}
+	EndGlobalSection
+EndGlobal

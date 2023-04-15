@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        
+        <Version>0.1.0</Version>
+        <Title>ColorEnumerations</Title>
+        <Description>Library for enumerating colors in different ways</Description>
+        <Copyright>Copyright (c) 2023 Y56380X</Copyright>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Library.fs" />
+        <None Include="../../LICENSE" Pack="true" PackagePath="" />
+    </ItemGroup>
+
+</Project>

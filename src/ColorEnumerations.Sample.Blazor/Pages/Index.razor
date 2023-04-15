@@ -1,0 +1,125 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+
+<div style="background-color: @RandomColors.Create().First().ToHexCode()">
+    <h1 style="color: @RandomColors.Create().First().ToHexCode()">Hello, world!</h1>
+</div>
+
+<div style="display: block;">
+    @foreach (var color in ColorGradient.Create(10, new RGB(0, 0, 0), new RGB(255, 255, 255)))
+    {
+        <div style="background-color: @color.ToHexCode(); height: 1cm; width: 1cm; display: inline-block"></div>
+    }
+</div>
+
+<div style="display: block;">
+    @foreach (var color in ColorGradient.Create(100, new RGB(0, 0, 0), new RGB(255, 255, 255)))
+    {
+        <div style="background-color: @color.ToHexCode(); height: 1cm; width: 0.1cm; display: inline-block"></div>
+    }
+</div>
+
+<div style="display: block;">
+    @foreach (var color in ColorGradient.Create(10, new RGB(255, 255, 255), new RGB(0, 0, 0)))
+    {
+        <div style="background-color: @color.ToHexCode(); height: 1cm; width: 1cm; display: inline-block"></div>
+    }
+</div>
+
+<div style="display: block;">
+    @foreach (var color in ColorGradient.Create(100, new RGB(255, 255, 255), new RGB(0, 0, 0)))
+    {
+        <div style="background-color: @color.ToHexCode(); height: 1cm; width: 0.1cm; display: inline-block"></div>
+    }
+</div>
+
+<div style="display: block;">
+    @foreach (var color in ColorGradient.Create(10, new RGB(0, 0, 0), new RGB(255, 0, 0)))
+    {
+        <div style="background-color: @color.ToHexCode(); height: 1cm; width: 1cm; display: inline-block"></div>
+    }
+</div>
+
+<div style="display: block;">
+    @foreach (var color in ColorGradient.Create(10, new RGB(0, 0, 0), new RGB(0, 255, 0)))
+    {
+        <div style="background-color: @color.ToHexCode(); height: 1cm; width: 1cm; display: inline-block"></div>
+    }
+</div>
+
+<div style="display: block;">
+    @foreach (var color in ColorGradient.Create(10, new RGB(0, 0, 0), new RGB(0, 0, 255)))
+    {
+        <div style="background-color: @color.ToHexCode(); height: 1cm; width: 1cm; display: inline-block"></div>
+    }
+</div>
+
+<div style="display: block;">
+    @foreach (var color in ColorGradient.Create(10, RandomColors.Create().First(), new RGB(0, 0, 0)))
+    {
+        <div style="background-color: @color.ToHexCode(); height: 1cm; width: 1cm; display: inline-block"></div>
+    }
+</div>
+
+<div style="display: block;">
+    @foreach (var color in ColorGradient.Create(10, RandomColors.Create().First(), new RGB(0, 0, 0)))
+    {
+        <div style="background-color: @color.ToHexCode(); height: 1cm; width: 1cm; display: inline-block"></div>
+    }
+</div>
+
+<div style="display: block;">
+    @foreach (var color in ColorGradient.Create(10, RandomColors.Create().First(), new RGB(255, 255, 255)))
+    {
+        <div style="background-color: @color.ToHexCode(); height: 1cm; width: 1cm; display: inline-block"></div>
+    }
+</div>
+
+<div style="display: block;">
+    @foreach (var color in ColorGradient.Create(10, RandomColors.Create().First(), new RGB(255, 255, 255)))
+    {
+        <div style="background-color: @color.ToHexCode(); height: 1cm; width: 1cm; display: inline-block"></div>
+    }
+</div>
+
+<div style="display: block;">
+    @foreach (var color in ColorGradient.Create(10, RandomColors.Create().First(), RandomColors.Create().First()))
+    {
+        <div style="background-color: @color.ToHexCode(); height: 1cm; width: 1cm; display: inline-block"></div>
+    }
+</div>
+
+<div style="display: block;">
+    @foreach (var color in ColorGradient.Create(10, RandomColors.Create().First(), RandomColors.Create().First()))
+    {
+        <div style="background-color: @color.ToHexCode(); height: 1cm; width: 1cm; display: inline-block"></div>
+    }
+</div>
+
+<div style="display: block;">
+    @foreach (var color in ColorGradient.Create(100, RandomColors.Create().First(), RandomColors.Create().First()))
+    {
+        <div style="background-color: @color.ToHexCode(); height: 1cm; width: 0.1cm; display: inline-block"></div>
+    }
+</div>
+
+<div style="display: block;">
+    @foreach (var color in ColorGradient.Create(100, RandomColors.Create().First(), RandomColors.Create().First()))
+    {
+        <div style="background-color: @color.ToHexCode(); height: 1cm; width: 0.1cm; display: inline-block"></div>
+    }
+</div>
+
+<div style="display: block;">
+    @foreach (var color in ColorGradient.Create(100, RandomColors.Create().First(), RandomColors.Create().First()))
+    {
+        <div style="background-color: @color.ToHexCode(); height: 1cm; width: 0.1cm; display: inline-block"></div>
+    }
+</div>
+
+<button @onclick="Reload">Reload</button>
+
+@code
+{
+    private void Reload() => NavigationManager.NavigateTo("/");
+}
