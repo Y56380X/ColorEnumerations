@@ -1,4 +1,4 @@
-using ColorEnumerations.Sample.Blazor;
+using ColorEnumerations.Samples.Blazor;
 using Microsoft.Extensions.DependencyInjection;
 using Photino.Blazor;
 
