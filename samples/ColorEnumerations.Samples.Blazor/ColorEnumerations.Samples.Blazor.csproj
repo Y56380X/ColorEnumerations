@@ -18,7 +18,7 @@
     </ItemGroup>
     
     <ItemGroup>
-      <ProjectReference Include="..\ColorEnumerations\ColorEnumerations.fsproj" />
+      <ProjectReference Include="..\..\src\ColorEnumerations\ColorEnumerations.fsproj" />
     </ItemGroup>
 
 </Project>
